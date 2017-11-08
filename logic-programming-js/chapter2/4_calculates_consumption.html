@@ -1,0 +1,15 @@
+<h3> Alcohol or Gasoline? </ h3>
+<script>
+    var tank = 40;
+    var roadWithGasoline = 480;
+    var roadWithAlcohol = 300;
+    var consumptionWithAlcohol = (roadWithAlcohol/tank);
+    var gasolineConsumption = (roadWithGasoline/tank);
+    document.write ("<br>Gasoline consumption: "+gasolineConsumption);
+    document.write ("<br>Consumption with alcohol: "+consumptionWithAlcohol);
+    if(gasolineConsumption > consumptionWithAlcohol){
+        document.write ("<br>It is cheaper to fuel with gasoline in: "+(gasolineConsumption-consumptionWithAlcohol));
+    }else{
+        document.write ("<br>It is cheaper to fuel with alcohol in: "+(consumptionWithAlcohol-gasolineConsumption));
+    }
+</script>       
